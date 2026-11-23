@@ -12,14 +12,15 @@
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to main content</a>
 <header><div class="wrap nav">
-<a class="brand" href="index.html"><img src="assets/logo.svg" alt=""><span>BLACK FEATHER<small>LITERARY ARTS</small></span></a>
+<a class="brand" href="index.html" aria-label="Black Feather Literary Arts, home"><img src="assets/logo.svg" alt=""><span>BLACK FEATHER<small>LITERARY ARTS</small></span></a>
 <nav aria-label="Main"><ul>
 <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="sponsors.html" aria-current="page">Sponsors</a></li>
 </ul></nav></div></header>
-<main>
+<main id="main">
 
-<div class="pagehead"><div class="wrap narrow"><a class="back" href="index.html">← Back to Home</a>
+<div class="pagehead"><div class="wrap narrow"><a class="back" href="index.html"><span aria-hidden="true">←</span> Back to Home</a>
 <p class="eyebrow">Brand Partnerships</p><h1 style="font-size:clamp(2rem,5vw,3rem)">Partner with Black Feather</h1>
 <p class="lead" style="margin-top:14px">Reach an engaged community of writers, creatives, and mindful professionals committed to cognitive restoration and analog practice.</p></div></div>
 <section><div class="wrap"><h2 class="center" style="margin-bottom:36px">Why Partner with Us</h2>
@@ -46,8 +47,8 @@
 </div></div></section>
 <section class="alt"><div class="wrap narrow"><h2>Let's Talk</h2><p class="lead">Tell us about your brand and how you'd like to partner with Black Feather.</p>
 <form id="inquiry">
-<div class="row"><label>Company Name<input name="company" required></label><label>Contact Name<input name="name" required></label></div>
-<div class="row"><label>Email<input name="email" type="email" required></label><label>Phone<input name="phone" type="tel"></label></div>
+<div class="row"><label>Company Name<input name="company" autocomplete="organization" required></label><label>Contact Name<input name="name" autocomplete="name" required></label></div>
+<div class="row"><label>Email<input name="email" type="email" autocomplete="email" required></label><label>Phone<input name="phone" type="tel" autocomplete="tel"></label></div>
 <label>Package Interest<select name="pkg"><option>Per Event (€5K)</option><option>Annual Partnership</option><option>Custom Package</option></select></label>
 <label>Message<textarea name="message" rows="5"></textarea></label>
 <button class="btn btn-primary" type="submit">Submit Inquiry</button>
@@ -56,7 +57,7 @@
 
 </main>
 <footer><div class="wrap f">
-<a class="brand" href="index.html"><img src="assets/logo.svg" alt=""><span>BLACK FEATHER<small>LITERARY ARTS</small></span></a>
+<a class="brand" href="index.html" aria-label="Black Feather Literary Arts, home"><img src="assets/logo.svg" alt=""><span>BLACK FEATHER<small>LITERARY ARTS</small></span></a>
 <ul><li><a href="about.html">About</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="sponsors.html">Sponsors</a></li><li><a data-mail="Subscribe me to updates" href="#">Subscribe</a></li></ul>
 <span>© 2026 Black Feather Literary Arts</span>
 </div></footer>

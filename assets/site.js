@@ -36,7 +36,7 @@ if (list) {
   filters.addEventListener("click", e => {
     const b = e.target.closest("button"); if (!b) return;
     cur = b.dataset.f;
-    filters.querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b));
+    filters.querySelectorAll("button").forEach(x => { x.classList.toggle("on", x === b); x.setAttribute("aria-pressed", x === b); });
     render();
   });
   fetch("workshops.json").then(r => r.json()).then(j => { all = j; render(); })
